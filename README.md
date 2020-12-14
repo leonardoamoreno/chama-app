@@ -3,7 +3,7 @@
 ## Ambientes:
 
 - Azure Api Management: https://github.com/leonardoamoreno/chama-app/
-- Imagem da api: 
+- docker: docker pull leonardoamoreno/coursesignupapi
 
 ## Teste:
 
@@ -22,6 +22,11 @@ Para testar a API basta acessar: https://coursesignupapi.azurewebsites.net/swagg
 
 - GET /Statistics
 
+### Azure functions
+
+Foi criado o esqueleto de uma function para ser chamada toda vez que um signup é criado
+- Toda vez que o evento signup é chamado será chamada a function para recalcular as estatísticas
+
 ## Tecnologias implementadas:
 
 - ASP.NET Core 3.1 (with .NET Core 3.1) 
@@ -32,6 +37,7 @@ Para testar a API basta acessar: https://coursesignupapi.azurewebsites.net/swagg
 - FluentValidator
 - MediatR
 - Swagger UI 
+- Azure Functions
 
 ## Arquitetura:
 
