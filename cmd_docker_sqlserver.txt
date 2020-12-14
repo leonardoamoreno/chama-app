@@ -1,0 +1,11 @@
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=!@12QWqw" -p 1433:1433 --name sql1 -d mcr.microsoft.com/mssql/server:latest
+
+Acessa o prompt de comando do container eme execução
+--------------------------------------------------------------------------------------------------
+$comando: docker exec -it sql1 "bash"
+$comando: clear 
+$comando: uname -a
+$comando: cd /opt/mssql-tools/bin
+$comando: pwd
+$comando: clear 
+$comando: ./sqlcmd -S localhost -U SA

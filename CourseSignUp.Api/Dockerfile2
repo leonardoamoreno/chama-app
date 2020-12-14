@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/dotnet/runtime:3.1
+
+WORKDIR /app
+
+COPY ./dist .
+
+ENTRYPOINT ["dotnet", "CourseSignUp.Api.dll"]
